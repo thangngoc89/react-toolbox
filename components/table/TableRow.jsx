@@ -37,9 +37,7 @@ class TableRow extends React.Component {
 
   renderCell (key) {
     const value = this.props.data[key];
-    if (this.props.onChange) {
-      return this.renderInput(key, value);
-    } else if (value) {
+    if (value) {
       return value.toString();
     }
   }
