@@ -50,6 +50,10 @@ class Input extends React.Component {
     });
   }
 
+  getInputNode () {
+    return this.refs.input;
+  }
+
   blur () {
     this.refs.input.blur();
   }
